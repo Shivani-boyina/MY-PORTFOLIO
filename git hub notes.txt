@@ -1,0 +1,16 @@
+748
+1.git init is used for initiallising a repository
+2.git add . is used for selecting all the files and folders 
+3.git commit -m "first commit" it helps to find out what type of version we are providing for an application and we can find who is updating the code
+4.git branch -M main ----"here main is the default  branch"
+                   ----through using a branch we can identify the respective user
+5.git remote----helps to access your respective repositery from any where
+6.git push ----going to push the code files into the github account 
+
+
+=============================================================
+commands for updating the content for an existing repository 
+=============================================================
+->git add . ==>(adding repositories to make changes into existing code)
+->git commit -m "message"==>(we are going to define a break point (version) for the updated code 
+->git push ==>(going to add the updated code into GitHub repository )

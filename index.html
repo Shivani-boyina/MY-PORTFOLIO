@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding-top: 100px;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(33, 136, 146, 0.03);
+        }
+
+        .logo-parent {
+            width: 10%;
+        }
+
+        .navbar-links {
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar-links a:hover{
+            color: black;
+
+        }
+
+        .navbar-links a {
+            color: cadetblue;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+
+        .lets-talk {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            width: 8%;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        .lets-talk:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .web-developer-container {
+            font-family: sans-serif;
+            background-color: #00ffff22;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2% 5%;
+            margin-top: 0;
+        }
+
+        .web-developer {
+            width: 50%;
+        }
+
+        .web-developer h1 {
+            font-size: 2.3rem;
+        }
+
+        .web-developer p {
+            text-align: justify;
+        }
+
+        .my-profile {
+            width: 40%;
+        }
+
+        .web-developer-links a {
+            background-color: cadetblue;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 0px 10px;
+        }
+
+        .web-developer-links a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .about-me-container {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2% 5%;
+            margin-top: 0;
+        }
+
+        .about-me {
+            width: 45%;
+        }
+
+        .about-me h2 {
+            color: cadetblue;
+        }
+
+        .about-me p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .about-left {
+            position: relative;
+        }
+
+        .project-count {
+            position: absolute;
+            bottom: 0%;
+            right: 15%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .project-count p {
+            color: cadetblue;
+        }
+
+        .about-my-profile {
+            width: 75%;
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            width: max-content;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hobbies-grid button {
+            min-width: 220px;
+            min-height: 70px;
+            background: #eaf6f9;
+            color: #2d8993;
+            border: none;
+            border-radius: 14px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(33, 136, 146, 0.07);
+            transition: background 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .hobbies-grid button:hover {
+            background: #d2eef6;
+        }
+
+        /* Responsive tweaks (optional) */
+        @media (max-width: 900px) {
+
+            .web-developer-container,
+            .about-me-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .web-developer,
+            .about-me {
+                width: 100%;
+            }
+
+            .my-profile,
+            .about-my-profile {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="" class="logo-parent">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3P6yqldoSjWfzhvQMhH9LDonRtPQAmf89Dw&s"
+                width="60%" alt="">
+        </a>
+        <div class="navbar-links">
+            <a href="">Home</a>
+            <a href="">About Me</a>
+            <a href="">Services</a>
+            <a href="">Skill</a>
+            <a href="">Work</a>
+            <a href="">Pricing</a>
+            <a href="">Testimonial</a>
+        </div>
+        <a href="" class="lets-talk">Lets Talk</a>
+    </nav>
+
+    <div class="web-developer-container">
+        <div class="web-developer">
+            <h1>Hey! I’m an aspiring IT professional</h1>
+            <p>A second-year student at Siddhartha Academy of Higher Education.
+                Passionate about technology,
+                I enjoy creating web solutions and learning new programming
+                concepts. Welcome to my portfolio!</p>
+            <div class="web-developer-links">
+                <a href="">LEARN MORE</a>
+                <a href="">HIRE ME</a>
+            </div>
+        </div>
+        <img class="my-profile"
+            src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="">
+    </div>
+
+    <div class="about-me-container">
+        <div class="about-left">
+            <img class="about-my-profile"
+                src="https://img.freepik.com/premium-vector/young-teenage-school-girl-holding-textbooks-casual-outfit_1275766-3543.jpg"
+                alt="">
+            <div class="project-count">
+                <h2>Aspiring Software Developer</h2>
+                <p>5+ Project Complete</p>
+            </div>
+        </div>
+        <div class="about-me">
+            <h3>About me</h3>
+            <h2>I am a Passionate IT student</h2>
+            <p>I am pursuing my B.Tech in Information Technology at Siddhartha Academy of Higher Education.
+                My journey began with basics in C, Python, and C++,
+                leading to a fascination with data structures,
+                computer organization, operating systems, and web development.
+                Alongside academics, I’ve explored the foundations of cybersecurity
+                and artificial intelligence. I love participating in hackathons and
+                am always looking for opportunities to learn and grow as a developer.</p>
+            <h2>smart work</h2>
+            <p>I have participated in team projects where we developed the front-end of web applications, gaining
+                hands-on experience with technologies
+                like HTML, CSS, and JavaScript frameworks.
+                These experiences helped me understand the importance of collaboration
+                and clean coding practices in real-world applications.</p>
+            <h2>modern work</h2>
+            <p>I have worked with a variety of technologies including Python and basic database management concepts.
+                I believe that passion for technology and continuous learning is key to success,
+                and I strive to bring that enthusiasm into every project I work on</p>
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <h3>Things I Love To Do</h3>
+                <div class="hobbies-grid">
+                    <button>Music</button>
+                    <button>Coding</button>
+                    <button>Writing</button>
+                    <button>Reading</button>
+                    <button>Learning New Things</button>
+                    <button>Dancing</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
